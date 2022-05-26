@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+</head>
+
+<body>
+    <center>
+        <p>Maite Salome Martinez Restrepo - ADSI - 2469285</p>
+        <h2 class="formulariotitulo">Formulario</h2>
+        <div class="contenedor">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="dato" required>
+            <br>
+            <br>
+            <input type="text" id="apellido" name="apellidos" placeholder="Apellidos" class="dato" required>
+            <br>
+            <br>
+            <input type="checbox" id="usuario" name=" usuario " placeholder="Usuario " class="dato " required>
+            <br>
+            <br>
+            <input type="password" id="clave" name="clave" placeholder="Contraseña" class="dato" required>
+            <br>
+            <br>
+            <h2>
+                Género:
+
+                <input type="radio" id="masculino" name="masculino" onclick="Masculino()" value="masculino"> Masculino
+
+                <input type="radio" id="femenino" name="femenino" onclick="Femenino()" value="femenino"> Femenino
+
+            </h2>
+            <h1>Para enviar el formulario simplemente presiona en alguno de tus generos y el formulario se habrá enviado con éxito</h1>
+
+        </div>
+        </form>
+    </center>
+    <script>
+        function Masculino(masculino) {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var usuario = document.getElementById("usuario").value;
+            var clave = document.getElementById("clave").value;
+
+
+
+
+            document.write("Su nombre es: " + nombre);
+            document.write("<br>");
+
+            document.write("Sus apellidos son: " + apellido);
+            document.write("<br>");
+
+            document.write("Su usuario es: " + usuario);
+            document.write("<br>");
+
+            document.write("Su clave es: " + clave);
+            document.write("<br>");
+            document.write("Su genero es: " + "Masculino");
+
+        }
+
+        function Femenino(femenino) {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var usuario = document.getElementById("usuario").value;
+            var clave = document.getElementById("clave").value;
+
+
+
+
+            document.write("Su nombre es: " + nombre);
+            document.write("<br>");
+
+            document.write("Sus apellidos son: " + apellido);
+            document.write("<br>");
+
+            document.write("Su usuario es: " + usuario);
+            document.write("<br>");
+
+            document.write("Su clave es: " + clave);
+            document.write("<br>");
+            document.write("Su genero es: " + "Femenino");
+
+        }
+    </script>
+</body>
+
+</html>
